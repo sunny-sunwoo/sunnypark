@@ -1,0 +1,58 @@
+html
+	font:
+		size: $base
+		family: $font-family-base
+		weight: $regular
+	line-height: 1.5
+
+a
+	+reset-anchor
+	+transition
+	&:hover
+		color: $mint
+
+.container
+	width: 83.33333333%
+	padding-bottom: 4.5rem
+	margin: 0 auto
+	overflow: hidden
+	+responsive($mb)
+		width: 90%
+		margin: 0 auto
+	&.no-padding
+		padding-bottom: 0
+
+.hit-area
+	display: block
+
+.invisible
+	visibility: hidden
+	+responsive($mb)
+		display: none
+
+.readable-hidden
+	@extend %readable-hidden
+
+.landing .title .br
+	font:
+		size: inherit
+		weight: inherit
+	line-height: inherit
+	color: inherit
+	+responsive($mb)
+		display: block
+		line-height: 1.2
+
+.child-br
+	+responsive($mb)
+		margin-top: 11px
+
+button
+	margin-top: 0.75rem
+	cursor: pointer
+	outline: none
+	color: $mint
+	+hover-opacity
+
+hr
+	color: rgba($body-text, .3)

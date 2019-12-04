@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Sunwoo Park's Porfolio">
+	<meta name="keywords" content="ITP, ETC, NYU, CMU, Carnegie Mellon University, New York University, Portfolio, Interactive Media Arts, Art&amp;Technology, Sogang University">
+	<meta name="author" content="Sunwoo Park">
+	<title>Cubit | Sunwoo Park</title>
+	<link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body class="cubit work">
+	<div class="container no-padding">
+		<header class="pg-header">
+			<h1 class="brand"><a href="../index.html">Sunwoo Park</a></h1>
+			<div class="link">
+				<a class="link-item" target="_blank" href="https://linkedin.com/in/sunwoo-park-289a01b0" aria-label="Go to LinkedIn Page">
+					<i class="fa fa-linkedin"></i>
+				</a>
+				<a class="link-item" target="_blank" href="https://www.facebook.com/sunwoo.park.71" aria-label="Go to Facebook Page">
+					<i class="fa fa-facebook"></i>
+				</a>
+				<a class="link-item" target="_blank" href="mailto:sssw0117@gmail.com" aria-label="Send an Email">
+					<i class="fa fa-envelope"></i>
+				</a>
+			</div>
+			<nav class="gnb">
+				<a class="nav-item" href="../index.html">Work</a>
+				<a class="nav-item" href="../about.html">About</a>
+			</nav>
+		</header>
+		<section class="landing">
+			<div class="title">
+				<div class="tags">
+					<span>#SmartTicker</span> <span>#PhysicalComputing</span> <span>#IoT</span> <span>#Interaction</span> <span>#Arduino</span> <span>#PhysicalComputing</span> <span>#FabricationTool</span>
+				</div>
+				<h2>Cubit</h2>
+				<p>Apr 2016 - May 2016    |    Project Manager, Programmer, Interaction Designer  <br>Created a wifi-based smart ticker to update various news around users including weather, message, email, and SNS alarms(facebook, instagram, linkedin) which helps them minimize and simplify several channels. Developed a working prototype in Arduino IDE using fabrication tools such as laser cutter and 3D printing.</p>
+			</div>
+		</section>
+	</div>
+	<section class="wide-img">
+		<h2 class="readable-hidden">Cubit</h2>
+	</section>
+	<div class="container">
+		<section class="detail">
+			<div class="detail-item">
+					<div class="slide">
+						<div class="slide-box slide-7">
+							<p class="image" aria-label="Cubit"></p>
+							<p class="image" aria-label="Cubit"></p>
+							<p class="image" aria-label="Cubit"></p>
+							<p class="image" aria-label="Cubit"></p>
+							<p class="image" aria-label="Cubit"></p>
+							<p class="image" aria-label="Cubit"></p>
+							<p class="image" aria-label="Cubit"></p>
+						</div>
+					</div>
+					<button>Next</button>
+				</div>
+			<div class="detail-item media-container md-16-9">
+				<iframe width="1280" height="720" src="https://www.youtube.com/embed/JDZk6hFNEcU" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</section>
+	</div>
+	<script type="text/javascript">
+		var slide = document.querySelector('.slide-box');
+		var button = document.querySelector('button');
+		var moveSlide = function(elem, num) {
+			var slide_obj = elem;
+			return function(){
+				var img_list = slide_obj.querySelectorAll('.image');
+				var img_width = parseInt(window.getComputedStyle(img_list.item(0)).getPropertyValue('width'), 10);
+				var cur_pos = parseInt(window.getComputedStyle(slide_obj).getPropertyValue("left"), 10);
+				var move = cur_pos - img_width;
+				console.log(num);
+				if ( move < img_width*(-num+1) ) {
+					slide_obj.style.left =  '0px'
+				} else {
+					slide_obj.style.left = move + 'px';
+				}
+			};
+		};
+		button.onclick = moveSlide(slide, 7);
+	</script>
+</body>
+</html>

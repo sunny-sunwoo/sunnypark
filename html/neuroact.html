@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Sunwoo Park's Porfolio">
+	<meta name="keywords" content="ITP, ETC, NYU, CMU, Carnegie Mellon University, New York University, Portfolio, Interactive Media Arts, Art&amp;Technology, Sogang University">
+	<meta name="author" content="Sunwoo Park">
+	<title>NeuroAct | Sunny Park</title>
+	<link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body class="neuroact work">
+	<div class="container no-padding">
+		<header class="pg-header">
+			<h1 class="brand"><a href="../index.html">Sunny Park</a></h1>
+			<div class="link">
+				<a class="link-item" target="_blank" href="https://www.linkedin.com/in/sunny-sunwoo-park/" aria-label="Go to LinkedIn Page">
+					<i class="fa fa-linkedin"></i>
+				</a>
+				<a class="link-item" target="_blank" href="https://github.com/sunny-sunwoo" aria-label="Go to Github Page">
+					<i class="fa fa-github"></i>
+				</a>
+				<a class="link-item" target="_blank" href="mailto:seonwoo1@andrew.cmu.edu" aria-label="Send an Email">
+					<i class="fa fa-envelope"></i>
+				</a>
+			</div>
+			<nav class="gnb">
+				<a class="nav-item" href="../index.html">Work</a>
+				<a class="nav-item" href="../about.html">About</a>
+				<a class="nav-item" href="https://drive.google.com/file/d/1KHR262pPMhNu9TNszYU2B45msR5ULXkb/view?usp=sharing">CV</a>
+			</nav>
+		</header>
+		<section class="landing">
+			<div class="title">
+				<div class="tags">
+					<span>#EMG Device</span> <span>#Physical Installation</span> <span>#UX Engineer</span> <span>#Interaction Design</span> 
+				</div>
+				<h2>NeuroAct</h2>
+				<p>Jan 2018 - May 2018    |    UX Engineer, Entertainment Technology Center, Carnegie Mellon University  <br> Using the pipeline SDK the client is developing, our armband device learns and predicts data from the user’s continuous gesture and it controls the sound filters. I designed the whole exhibits, implemented the sound filter, mapped the gesture data into the filter,  and visualized the sound to create an immersive experience. </p>
+			</div>
+		</section>
+	</div>
+	<section class="wide-img">
+		<h2 class="readable-hidden">NeuroAct</h2>
+	</section>
+	<div class="container">
+		<section class="detail">
+			<div class="detail-item">
+				<h4 class="detail-title">Skills.</h4>
+				<p>HTML/CSS, JavaScript, Python</p>
+			</div>
+			<div class="detail-item">
+				<h4 class="detail-title"> Conclusion</h4>
+					<div class="detail-sm-item">
+						<p>From our experience, we believe the device has great potentials in a variety of applications, including physical training therapy, on-the-go alternative controllers, VR/AR entertainment, live theater performance, controlling smart homes, and controlling robotics. However, there are still several technical challenges in the current hardware and network communication that the later SDK would need to resolve. Therefore, it is very important for us to communicate daily as a team to scope the design process, set appropriate weekly sprints to experiment and learn through trials and errors, discuss with clients through weekly documentations and meetings, and manage our schedule to plan ahead for any unexpected problems that can arise. <br>
+						In a way, we are our client’s first external developers whose responsible is to provide feedback on the quality assurance of the device and SDK documentation. We are proud of what we have achieved, and we hope other developers can learn from our experience to create better applications for this cutting-edge technology.
+						</p>
+					</div>
+			</div>
+			<div class="detail-item">
+				<h4 class="detail-title"> Video </h4>
+				<div class="detail-item media-container md-16-9">
+					<iframe src="https://player.vimeo.com/video/280677966" width="640" height="326" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script type="text/javascript">
+		var slide = document.querySelector('.slide-box');
+		var button = document.querySelector('button');
+		var moveSlide = function(elem, num) {
+			var slide_obj = elem;
+			return function(){
+				var img_list = slide_obj.querySelectorAll('.image');
+				var img_width = parseInt(window.getComputedStyle(img_list.item(0)).getPropertyValue('width'), 10);
+				var cur_pos = parseInt(window.getComputedStyle(slide_obj).getPropertyValue("left"), 10);
+				console.log(img_width);
+				console.log(cur_pos);
+				var move = cur_pos - img_width;
+				if ( move < img_width*(-num+1) ) {
+					slide_obj.style.left =  '0px'
+				} else {
+					slide_obj.style.left = move + 'px';
+				}
+			};
+		};
+		button.onclick = moveSlide(slide, 8);
+	</script>
+</body>
+</html>

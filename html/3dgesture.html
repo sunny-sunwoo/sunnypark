@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Sunwoo Park's Porfolio">
+	<meta name="keywords" content="ITP, ETC, NYU, CMU, Carnegie Mellon University, New York University, Portfolio, Interactive Media Arts, Art&amp;Technology, Sogang University">
+	<meta name="author" content="Sunwoo Park">
+	<title>3D Gesture | Sunwoo Park</title>
+	<link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body class="gesture work">
+	<div class="container no-padding">
+		<header class="pg-header">
+			<h1 class="brand"><a href="../index.html">Sunwoo Park</a></h1>
+			<div class="link">
+				<a class="link-item" target="_blank" href="https://linkedin.com/in/sunwoo-park-289a01b0" aria-label="Go to LinkedIn Page">
+					<i class="fa fa-linkedin"></i>
+				</a>
+				<a class="link-item" target="_blank" href="https://www.facebook.com/sunwoo.park.71" aria-label="Go to Facebook Page">
+					<i class="fa fa-facebook"></i>
+				</a>
+				<a class="link-item" target="_blank" href="mailto:sssw0117@gmail.com" aria-label="Send an Email">
+					<i class="fa fa-envelope"></i>
+				</a>
+			</div>
+			<nav class="gnb">
+				<a class="nav-item" href="../index.html">Work</a>
+				<a class="nav-item" href="../about.html">About</a>
+			</nav>
+		</header>
+		<section class="landing">
+			<div class="title">
+				<div class="tags">
+					<span>#Patent</span> <span>#UserInterface</span> <span>#InteractionDesign</span> <span>#3DGesture</span> <span>#SmartDevice</span> <span>#UserScenario</span>
+				</div>
+				<h2>UX for 3D Gestures</h2>
+				<p>Nov 2013 - Nov 2015  |   UX Designer, LG Electronics R&amp;D Center <br>Applied for a patent on the method to categorize various user inputs shown as 3D gestures within Smart TV environment.</p>
+			</div>
+		</section>
+	</div>
+	<section class="wide-img">
+		<h2 class="readable-hidden">UX for 3D Gestures</h2>
+	</section>
+	<div class="container">
+		<section class="detail">
+			<div class="detail-item">
+			<h4 class="detail-title">Awards.</h4>
+				<div class="detail-sm-item">
+					<p>2015.01</p>
+					<p>Applied for a patent, Korean Intellectual Property Office</p>
+				</div>
+				<div class="detail-sm-item">
+					<p>2014.11</p>
+					<p>2013 Hanium Expo, Ministry of Science, ICT and Future Planning, Selected Project</p>
+				</div>
+			</div>
+			<div class="detail-item media-container md-16-9">
+				<iframe width="1280" height="720" src="https://www.youtube.com/embed/mLglSN7Tg8M" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="detail-item">
+				<h4 class="detail-title">User Scenario and UX Design</h4>
+				<p>Developed user interfaces based on user interview and research of user experience in 3D environment.</p>
+			</div>
+			<div class="detail-item">
+					<div class="slide">
+						<div class="slide-box slide-7">
+							<p class="image" aria-label="3D Gesture"></p>
+							<p class="image" aria-label="3D Gesture"></p>
+							<p class="image" aria-label="3D Gesture"></p>
+							<p class="image" aria-label="3D Gesture"></p>
+							<p class="image" aria-label="3D Gesture"></p>
+							<p class="image" aria-label="3D Gesture"></p>
+							<p class="image" aria-label="3D Gesture"></p>
+						</div>
+					</div>
+					<button>Next</button>
+				</div>
+			<div class="detail-item">
+				<h4 class="detail-title">Hanium Expo</h4>
+				<p style="margin-bottom: 1.5rem">Selected as an excellent industry-university project by Ministry of Science, ICT and Future Planning.</p>
+				<img class="col-8" src="../asset/gesture/3dgesture-2.png">
+			</div>
+				<div class="detail-item">
+					<h4 class="detail-title">Patent</h4>
+					<p>Applied for a patent on the Method and apparatus of providing user interface having three-dimensional structure. </p>
+					<a href="https://goo.gl/ifBTWw" target="_blank">Registration No. : 1015616490000 (2015.10.13)</a>
+					<img src="../asset/gesture/3dgesture-3.png" alt="Patent">
+				</div>
+		</section>
+	</div>
+	<script type="text/javascript">
+		var slide = document.querySelector('.slide-box');
+		var button = document.querySelector('button');
+		var moveSlide = function(elem, num) {
+			var slide_obj = elem;
+			return function(){
+				var img_list = slide_obj.querySelectorAll('.image');
+				var img_width = parseInt(window.getComputedStyle(img_list.item(0)).getPropertyValue('width'), 10);
+				var cur_pos = parseInt(window.getComputedStyle(slide_obj).getPropertyValue("left"), 10);
+				console.log(img_width);
+				console.log(cur_pos);
+				var move = cur_pos - img_width;
+				if ( move < img_width*(-num+1) ) {
+					slide_obj.style.left =  '0px'
+				} else {
+					slide_obj.style.left = move + 'px';
+				}
+			};
+		};
+		button.onclick = moveSlide(slide, 7);
+	</script>
+</body>
+</html>

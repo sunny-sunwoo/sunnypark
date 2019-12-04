@@ -1,0 +1,335 @@
+.slide 
+	position: relatve
+	width: 100%
+	overflow: hidden
+	.slide-box
+		@extend %clearfix
+		position: relative
+		left: 0
+		height: auto
+		transition: .8s all ease-in
+		&.slide-2
+			width: 200%
+			.image
+				width: 50%
+				padding-bottom: 37.5%
+		&.slide-3
+			width: 300%
+			.image
+				width: 33.333333333333333%
+				padding-bottom: 25%
+		&.slide-4
+			width: 400%
+			.image
+				width: 25%
+				padding-bottom: 18.75%
+		&.slide-5
+			width: 500%
+			.image
+				width: 20%
+				padding-bottom: 15%
+		&.slide-6
+			width: 600%
+			.image
+				width: 16.66666666%
+				padding-bottom: 12.5%
+		&.slide-7
+			width: 700%
+			.image
+				width: 14.285714286%
+				padding-bottom: 10.714285714%
+		&.slide-8
+			width: 800%
+			.image
+				width: 12.5%
+				padding-bottom: 9.375%
+		&.slide-10
+			width: 1000%
+			.image
+				width: 10%
+				padding-bottom: 7.5%
+	.image
+		float: left
+		height: 0
+		color: #fff
+		text-align: center
+		background:
+			size: cover
+			position: center center
+			repeat: no-repeat
+		.gifto &
+			&:nth-child(1)
+				background-image: url(../asset/gifto-slide/gifto-s1.png)
+			&:nth-child(2)
+				background-image: url(../asset/gifto-slide/gifto-s2.png)
+			&:nth-child(3)
+				background-image: url(../asset/gifto-slide/gifto-s3.png)
+			&:nth-child(4)
+				background-image: url(../asset/gifto-slide/gifto-s4.png)
+		.cubit &
+			&:nth-child(1)
+				background-image: url(../asset/cubit/11-cubit-s1.png)
+			&:nth-child(2)
+				background-image: url(../asset/cubit/11-cubit-s2.png)
+			&:nth-child(3)
+				background-image: url(../asset/cubit/11-cubit-s3.png)
+			&:nth-child(4)
+				background-image: url(../asset/cubit/11-cubit-s4.png)
+			&:nth-child(5)
+				background-image: url(../asset/cubit/11-cubit-s5.png)
+			&:nth-child(6)
+				background-image: url(../asset/cubit/11-cubit-s6.png)
+			&:nth-child(7)
+				background-image: url(../asset/cubit/11-cubit-s7.jpg)
+		.noteon &
+			&:nth-child(1)
+				background-image: url(../asset/noteon_slide/3-0x90-s1.jpeg)
+			&:nth-child(2)
+				background-image: url(../asset/noteon_slide/3-0x90-s2.jpeg)
+			&:nth-child(3)
+				background-image: url(../asset/noteon_slide/3-0x90-s3.jpeg)
+		.memory &
+			&:nth-child(1)
+				background-image: url(../asset/mh_slide/02-memoryhorizon-s1.jpeg)
+			&:nth-child(2)
+				background-image: url(../asset/mh_slide/02-memoryhorizon-s2.jpeg)
+			&:nth-child(3)
+				background-image: url(../asset/mh_slide/02-memoryhorizon-s3.jpeg)
+			&:nth-child(4)
+				background-image: url(../asset/mh_slide/02-memoryhorizon-s4.jpeg)
+		.smarthome &
+			&:nth-child(1)
+				background-image: url(../asset/smh_slide/09-smarthome-s1.jpg)
+			&:nth-child(2)
+				background-image: url(../asset/smh_slide/09-smarthome-s2.jpg)
+			&:nth-child(3)
+				background-image: url(../asset/smh_slide/09-smarthome-s3.png)
+			&:nth-child(4)
+				background-image: url(../asset/smh_slide/09-smarthome-s4.png)
+			&:nth-child(5)
+				background-image: url(../asset/smh_slide/09-smarthome-s5.jpg)
+		.momice &
+			&:nth-child(1)
+				background-image: url(../asset/momice_slide/06-momice-s1.png)
+			&:nth-child(2)
+				background-image: url(../asset/momice_slide/06-momice-s2.png)
+			&:nth-child(3)
+				background-image: url(../asset/momice_slide/06-momice-s3.png)
+			&:nth-child(4)
+				background-image: url(../asset/momice_slide/06-momice-s4.png)
+			&:nth-child(5)
+				background-image: url(../asset/momice_slide/06-momice-s5.png)
+			&:nth-child(6)
+				background-image: url(../asset/momice_slide/06-momice-s6.png)
+			&:nth-child(7)
+				background-image: url(../asset/momice_slide/06-momice-s7.png)
+			&:nth-child(8)
+				background-image: url(../asset/momice_slide/06-momice-s8.png)
+		.gesture &
+			&:nth-child(1)
+				background-image: url(../asset/gesture_slide/07-3dgesture-s1.png)
+			&:nth-child(2)
+				background-image: url(../asset/gesture_slide/07-3dgesture-s2.png)
+			&:nth-child(3)
+				background-image: url(../asset/gesture_slide/07-3dgesture-s3.png)
+			&:nth-child(4)
+				background-image: url(../asset/gesture_slide/07-3dgesture-s4.png)
+			&:nth-child(5)
+				background-image: url(../asset/gesture_slide/07-3dgesture-s5.png)
+			&:nth-child(6)
+				background-image: url(../asset/gesture_slide/07-3dgesture-s6.png)
+			&:nth-child(7)
+				background-image: url(../asset/gesture_slide/07-3dgesture-s7.png)
+		.pno &
+			&:nth-child(1)
+				background-image: url(../asset/pno_slide/01-pno-s1.png)
+			&:nth-child(2)
+				background-image: url(../asset/pno_slide/01-pno-s2.jpg)
+			&:nth-child(3)
+				background-image: url(../asset/pno_slide/01-pno-s3.png)
+			&:nth-child(4)
+				background-image: url(../asset/pno_slide/01-pno-s4.jpg)
+			&:nth-child(5)
+				background-image: url(../asset/pno_slide/01-pno-s5.jpg)
+			&:nth-child(6)
+				background-image: url(../asset/pno_slide/01-pno-s6.jpg)
+			&:nth-child(7)
+				background-image: url(../asset/pno_slide/01-pno-s7.jpg)
+			&:nth-child(8)
+				background-image: url(../asset/pno_slide/01-pno-s8.jpg)
+			&:nth-child(9)
+				background-image: url(../asset/pno_slide/01-pno-s9.jpg)
+			&:nth-child(10)
+				background-image: url(../asset/pno_slide/01-pno-s10.jpg)
+		.student &
+			&:nth-child(1)
+				background-image: url(../asset/stp_slide/12-stupres-s1.jpg)
+			&:nth-child(2)
+				background-image: url(../asset/stp_slide/12-stupres-s2.jpg)
+			&:nth-child(3)
+				background-image: url(../asset/stp_slide/12-stupres-s3.jpg)
+			&:nth-child(4)
+				background-image: url(../asset/stp_slide/12-stupres-s4.jpg)
+			&:nth-child(5)
+				background-image: url(../asset/stp_slide/12-stupres-s5.jpg)
+			&:nth-child(6)
+				background-image: url(../asset/stp_slide/12-stupres-s6.jpg)
+			&:nth-child(7)
+				background-image: url(../asset/stp_slide/12-stupres-s7.jpg)
+			&:nth-child(8)
+				background-image: url(../asset/stp_slide/12-stupres-s8.jpg)
+
+.tumslide-1
+	.image
+		&:nth-child(1)
+			background-image: url(../asset/tumblo-slide1/tumblo-s1.png)
+		&:nth-child(2)
+			background-image: url(../asset/tumblo-slide1/tumblo-s2.png)
+		&:nth-child(3)
+			background-image: url(../asset/tumblo-slide1/tumblo-s3.png)
+		&:nth-child(4)
+			background-image: url(../asset/tumblo-slide1/tumblo-s4.png)
+		&:nth-child(5)
+			background-image: url(../asset/tumblo-slide1/tumblo-s5.png)
+
+.tumslide-2
+	.image
+		&:nth-child(1)
+			background-image: url(../asset/tumblo-slide2/tumblo-s6.jpg)
+		&:nth-child(2)
+			background-image: url(../asset/tumblo-slide2/tumblo-s7.png)
+		&:nth-child(3)
+			background-image: url(../asset/tumblo-slide2/tumblo-s8.png)
+		&:nth-child(4)
+			background-image: url(../asset/tumblo-slide2/tumblo-s9.jpg)
+		&:nth-child(5)
+			background-image: url(../asset/tumblo-slide2/tumblo-s10.png)
+		&:nth-child(6)
+			background-image: url(../asset/tumblo-slide2/tumblo-s11.png)
+		&:nth-child(7)
+			background-image: url(../asset/tumblo-slide2/tumblo-s12.jpg)
+		&:nth-child(8)
+			background-image: url(../asset/tumblo-slide2/tumblo-s13.png)
+
+.otsslide-1
+	.image
+		&:nth-child(1)
+			background-image: url(../asset/otsslide-1/04-overthesky-s1.png)
+		&:nth-child(2)
+			background-image: url(../asset/otsslide-1/04-overthesky-s2.png)
+		&:nth-child(3)
+			background-image: url(../asset/otsslide-1/04-overthesky-s3.png)
+		&:nth-child(4)
+			background-image: url(../asset/otsslide-1/04-overthesky-s4.png)
+		&:nth-child(5)
+			background-image: url(../asset/otsslide-1/04-overthesky-s5.png)
+		&:nth-child(6)
+			background-image: url(../asset/otsslide-1/04-overthesky-s6.png)
+
+.otsslide-2
+	.image
+		&:nth-child(1)
+			background-image: url(../asset/otsslide-2/04-overthespace-s1.png)
+		&:nth-child(2)
+			background-image: url(../asset/otsslide-2/04-overthespace-s2.png)
+		&:nth-child(3)
+			background-image: url(../asset/otsslide-2/04-overthespace-s3.png)
+		&:nth-child(4)
+			background-image: url(../asset/otsslide-2/04-overthespace-s4.png)
+
+.hci-1
+	.image
+		&:nth-child(1)
+			background-image: url(../asset/hci_slide/08-hci-s1.png)
+		&:nth-child(2)
+			background-image: url(../asset/hci_slide/08-hci-s2.png)
+		&:nth-child(3)
+			background-image: url(../asset/hci_slide/08-hci-s3.png)
+		&:nth-child(4)
+			background-image: url(../asset/hci_slide/08-hci-s4.png)
+
+.hci-2
+	.image
+		&:nth-child(1)
+			background-image: url(../asset/hci_slide/08-hci-s5.png)
+		&:nth-child(2)
+			background-image: url(../asset/hci_slide/08-hci-s6.png)
+		&:nth-child(3)
+			background-image: url(../asset/hci_slide/08-hci-s7.png)
+
+.ig-1
+	.image
+		&:nth-child(1)
+			background-image: url(../asset/ig_slide/13-idea-s1.png)
+		&:nth-child(2)
+			background-image: url(../asset/ig_slide/13-idea-s2.png)
+
+.ig-2
+	.image
+		&:nth-child(1)
+			background-image: url(../asset/ig_slide/13-idea-s3.png)
+		&:nth-child(2)
+			background-image: url(../asset/ig_slide/13-idea-s4.png)
+		&:nth-child(3)
+			background-image: url(../asset/ig_slide/13-idea-s5.png)
+
+.ig-3
+	.image
+		&:nth-child(1)
+			background-image: url(../asset/ig_slide/13-idea-s6.png)
+		&:nth-child(2)
+			background-image: url(../asset/ig_slide/13-idea-s7.png)
+		&:nth-child(3)
+			background-image: url(../asset/ig_slide/13-idea-s8.png)
+		&:nth-child(4)
+			background-image: url(../asset/ig_slide/13-idea-s9.png)
+
+.other-1
+	.image
+		&:nth-child(1)
+			background-image: url(../asset/other_slide/14-other-s1-1.jpg)
+		&:nth-child(2)
+			background-image: url(../asset/other_slide/14-other-s1-2.png)
+		&:nth-child(3)
+			background-image: url(../asset/other_slide/14-other-s1-3.png)
+		&:nth-child(4)
+			background-image: url(../asset/other_slide/14-other-s1-4.png)
+
+.other-2
+	.image
+		&:nth-child(1)
+			background-image: url(../asset/other_slide/14-other-s2-1.png)
+		&:nth-child(2)
+			background-image: url(../asset/other_slide/14-other-s2-2.png)
+		&:nth-child(3)
+			background-image: url(../asset/other_slide/14-other-s2-3.png)
+		&:nth-child(4)
+			background-image: url(../asset/other_slide/14-other-s2-4.png)
+
+.other-3
+	.image
+		&:nth-child(1)
+			background-image: url(../asset/other_slide/14-other-s3-1.png)
+		&:nth-child(2)
+			background-image: url(../asset/other_slide/14-other-s3-2.png)
+		&:nth-child(3)
+			background-image: url(../asset/other_slide/14-other-s3-3.jpg)
+		&:nth-child(4)
+			background-image: url(../asset/other_slide/14-other-s3-4.png)
+
+.other-4
+	.image
+		&:nth-child(1)
+			background-image: url(../asset/other_slide/14-other-s4-1.jpeg)
+		&:nth-child(2)
+			background-image: url(../asset/other_slide/14-other-s4-2.png)
+		&:nth-child(3)
+			background-image: url(../asset/other_slide/14-other-s4-3.jpg)
+		&:nth-child(4)
+			background-image: url(../asset/other_slide/14-other-s4-4.jpg)
+		&:nth-child(5)
+			background-image: url(../asset/other_slide/14-other-s4-5.png)
+		&:nth-child(6)
+			background-image: url(../asset/other_slide/14-other-s4-6.png)
+		&:nth-child(7)
+			background-image: url(../asset/other_slide/14-other-s4-7.jpeg)

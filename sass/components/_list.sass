@@ -1,0 +1,55 @@
+.about-list
+	width: 100%
+	+responsive($dk)
+		+fluid-col(9, 12)
+		margin: 0 auto
+	ul
+		@extend %reset-list
+		margin-bottom: 4.5rem
+	li
+		@extend %clearfix
+		margin-bottom: 1rem
+		+responsive($mb)
+			margin-bottom: 1.5rem
+		.col-1
+			&:first-child
+				font:
+					size: 12px
+				line-height: 1.5rem
+		.col-2
+			&:first-child
+				font:
+					size: 12px
+				line-height: 1.5rem
+	+responsive($dk)
+		.col-1
+			+fluid-col(1, 8, $float: true)
+			padding-right: 20px
+		.col-2
+			+fluid-col(2, 8, $float: true)
+			padding-right: 20px
+		.col-3
+			+fluid-col(3, 8, $float: true)
+			padding-right: 20px
+		.col-4
+			+fluid-col(4, 8, $float: true)
+		.col-6
+			+fluid-col(6, 8, $float: true)
+	+responsive($mb)
+		.col-1
+			&:first-child
+				font-weight: $bold
+				color: $dark-mint
+		.col-2
+			&:first-child
+				font-weight: $bold
+				color: $dark-mint
+		.role
+			font-weight: $bold
+			line-height: 1.5rem
+
+
+.list-title
+	margin-bottom: 1.5rem
+	font-size: 18px
+	line-height: 1.5rem

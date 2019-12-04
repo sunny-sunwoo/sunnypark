@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Sunwoo Park's Porfolio">
+	<meta name="keywords" content="ITP, ETC, NYU, CMU, Carnegie Mellon University, New York University, Portfolio, Interactive Media Arts, Art&amp;Technology, Sogang University">
+	<meta name="author" content="Sunwoo Park">
+	<title>P.N.O. | Sunny Park</title>
+	<link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body class="pno work">
+	<div class="container no-padding">
+		<header class="pg-header">
+			<h1 class="brand"><a href="../index.html">Sunny Park</a></h1>
+			<div class="link">
+				<a class="link-item" target="_blank" href="https://www.linkedin.com/in/sunny-sunwoo-park/" aria-label="Go to LinkedIn Page">
+					<i class="fa fa-linkedin"></i>
+				</a>
+				<a class="link-item" target="_blank" href="https://github.com/sunny-sunwoo" aria-label="Go to Github Page">
+					<i class="fa fa-github"></i>
+				</a>
+				<a class="link-item" target="_blank" href="mailto:seonwoo1@andrew.cmu.edu" aria-label="Send an Email">
+					<i class="fa fa-envelope"></i>
+				</a>
+			</div>
+			<nav class="gnb">
+				<a class="nav-item" href="../index.html">Work</a>
+				<a class="nav-item" href="../about.html">About</a>
+				<a class="nav-item" href="https://drive.google.com/file/d/1KHR262pPMhNu9TNszYU2B45msR5ULXkb/view?usp=sharing">CV</a>
+			</nav>
+		</header>
+		<section class="landing">
+			<div class="title">
+				<div class="tags">
+					<span>#Piano</span> <span>#Interaction</span> <span>#Media Art</span> <span>#Interactive Installation</span> <span>#Physical Computing</span> <span>#Leap Motion</span> 
+				</div>
+				<h2 class="child-br"><span class="br">P.N.O. </span>(Piano in Orbit)</h2>
+				<p>P.N.O. is a new concept of an extended musical instrument which provides visitors with an experience to interact with the piano through sound and visual projection without physical contact. I developed a new interface and mechanism for the musical instrument through motion capture data and real-time visual projection on the acoustic piano. </p>
+			</div>
+		</section>
+	</div>
+	<section class="wide-img">
+		<h2 class="readable-hidden">P.N.O. Installation</h2>
+	</section>
+	<div class="container">
+		<section class="detail">
+			<div class="detail-item">
+				<h4 class="detail-title">Skills.</h4>
+				<p>Processing, Arduino, Design Thinking, Rapid Prototyping </p>
+			</div>
+			<div class="detail-item media-container md-16-9">
+				<iframe src="https://player.vimeo.com/video/165275329" width="1280" height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			</div>
+			<div class="detail-item">
+				<h4 class="detail-title">Concept.</h4>
+				<p>The installation space is split into three zones: the input-zone, output-zone, and visual-projection-zone. In the input-zone, the guests’ finger movement is detected by leap motion while, in the output-zone, the piano produces the actual sound corresponding to the motion data captured in the input-zone. Also, the screen presents a projection mapping in the visual-projection-zone which visualizes the sound notes. The communication among these three separate zones is achieved by the various sensors and actuators installed in the exhibition space. Guests can create the sound along with visual effects on the screen just by swirling or tapping their fingers in the air. </p>
+				<img class="col-8" src="../asset/pno/pno-2.png" alt="P.N.O.">
+			</div>
+
+			<div class="detail-item">
+				<h4 class="detail-title">Interaction Design.</h4>
+				<p>P.N.O produces sound as the leap motion captures each gesture. Guests can play a continuous slide upward or downward by making horizontal swipe gesture while vertical swipe gestures change the scale. The scale options include major, pentatonic, harmonic minor, and blues. Each key note is played depending on the keytap gestures from 10 fingers. </p>
+			</div>
+			<div class="detail-item">
+				<h4 class="detail-title">Internal Mechanism.</h4>
+				<p>We installed actuators, solenoids, in front of each 88 keys’ back check to produce sound without physical touch on the keys. The detected finger motion captured by the installed sensor goes through the algorithms which ultimately actuate the solenoids. (1) As solenoids push each back checks, the action lever, which was previously a point of action, switches to a point of effort; therefore each key is pressed as if there has been an actual physical touch upon it. At this point, the vertical movement of each key (2)works as a force to push the catcher and (3)make the hammer hit the string and play the sound.</p>
+				<img class="col-5" src="../asset/pno/pno-3.png" alt="P.N.O. Internal Mechanism">
+			</div>
+			<div class="detail-item">
+					<h4 class="detail-title">Installation Setup.</h4>
+					<img class="col-5" src="../asset/pno/pno-4.png" alt="P.N.O. Installation Setup">
+					<p>(a) upright piano with actuators installed inside   (b) leap motion detecting finger motion <br> 
+					(c) beam projector    (d) speaker   (e) two laptops   (f) condenser microphone</p>
+			</div>
+			<div class="detail-item">
+					<h4 class="detail-title">Working Process.</h4>
+					<div class="detail-sm-item">
+						<h5>Transformation of internal mechanism</h5>
+						<p>The main medium is an acoustic piano, which is played using 88 actuators. In order to make 88 piano keys controlled by gesture inputs, I did research on sensors and actuators and tried simulation with different actuators on each key. Depending on the simulation, 88 solenoids were attached which generate a controlled magnetic field when an electric current is passed through it. </p>
+					</div>
+					<div class="detail-sm-item">
+						<h5>Interaction Design</h5>
+						<p>P.N.O used the leap motion system which recognizes and tracks hands and fingers. The device operates in an intimate proximity with high precision and tracking frame rate and reports discrete positions and motion. Depending on the user research and feedback from playtesting, we picked 4 gestures to create a intuitive interaction for the piano performance and mapped them into appropriate musical expression.</p>
+					</div>
+					<div class="detail-sm-item">
+						<h5>Programming </h5>
+						<p>Based on the Leap Motion API, I made a motion algorithm with keytap, horizontal/vertical swipe, and circle gesture and mapped each input into the outputs for actuators and visualizer. Arduino was used to build the piano controller which can manipulate the whole circuit boards and the real-time visualizer including 2D physics of particles was implemented on Processing.</p>
+					</div>
+					<div class="detail-sm-item">
+						<h5>Visualization</h5>
+						<p>We presented oscillating string and particle animations by visualizing each key sound created by the finger motion captured by leap motion. The string is a sine wave oscillator, and small particles fall and pile up around it.</p>
+					</div>
+					<div class="detail-sm-item">
+						<h5>Final Simulation and Exhibition</h5>
+						<p>
+							- Art&amp;Technology Conference (2015.11) <br>
+							- 2016 HCI Korea (2016.02)  <br>
+							- 2016 Seoul New Media Festival (2016.08)</p>
+					</div>
+				</div>
+			<div class="detail-item">
+			<h4 class="detail-title">Achievements.</h4>
+				<div class="detail-sm-item">
+					<p>2016.02</p>
+					<p>HCI Korea 2016, Creative Awards</p>
+				</div>
+				<div class="detail-sm-item">
+					<p>2016.08</p>
+					<p>Selected Artwork, Seoul New Media Festival(NEMAF)</p>
+				</div>
+			</div>
+			
+				
+				<div class="detail-item">
+					<div class="slide">
+						<div class="slide-box slide-10">
+							<p class="image" aria-label="P.N.O."></p>
+							<p class="image" aria-label="P.N.O."></p>
+							<p class="image" aria-label="P.N.O."></p>
+							<p class="image" aria-label="P.N.O."></p>
+							<p class="image" aria-label="P.N.O."></p>
+							<p class="image" aria-label="P.N.O."></p>
+							<p class="image" aria-label="P.N.O."></p>
+							<p class="image" aria-label="P.N.O."></p>
+							<p class="image" aria-label="P.N.O."></p>
+							<p class="image" aria-label="P.N.O."></p>
+						</div>
+					</div>
+					<button>Next</button>
+				</div>
+		</section>
+	</div>
+	<script type="text/javascript">
+		var slide = document.querySelector('.slide-box');
+		var button = document.querySelector('button');
+		var moveSlide = function(elem, num) {
+			var slide_obj = elem;
+			return function(){
+				var img_list = slide_obj.querySelectorAll('.image');
+				var img_width = parseInt(window.getComputedStyle(img_list.item(0)).getPropertyValue('width'), 10);
+				var cur_pos = parseInt(window.getComputedStyle(slide_obj).getPropertyValue("left"), 10);
+				console.log(img_width);
+				console.log(cur_pos);
+				var move = cur_pos - img_width;
+				if ( move < img_width*(-num+1) ) {
+					slide_obj.style.left =  '0px'
+				} else {
+					slide_obj.style.left = move + 'px';
+				}
+			};
+		};
+		button.onclick = moveSlide(slide, 10);
+	</script>
+</body>
+</html>

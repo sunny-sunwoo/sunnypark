@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Sunwoo Park's Porfolio">
+	<meta name="keywords" content="ITP, ETC, NYU, CMU, Carnegie Mellon University, New York University, Portfolio, Interactive Media Arts, Art&amp;Technology, Sogang University">
+	<meta name="author" content="Sunwoo Park">
+	<title>SketchBoard | Sunny Park</title>
+	<link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body class="sketchboard work">
+	<div class="container no-padding">
+		<header class="pg-header">
+			<h1 class="brand"><a href="../index.html">Sunny Park</a></h1>
+			<div class="link">
+				<a class="link-item" target="_blank" href="https://www.linkedin.com/in/sunny-sunwoo-park/" aria-label="Go to LinkedIn Page">
+					<i class="fa fa-linkedin"></i>
+				</a>
+				<a class="link-item" target="_blank" href="https://github.com/sunny-sunwoo" aria-label="Go to Github Page">
+					<i class="fa fa-github"></i>
+				</a>
+				<a class="link-item" target="_blank" href="mailto:seonwoo1@andrew.cmu.edu" aria-label="Send an Email">
+					<i class="fa fa-envelope"></i>
+				</a>
+			</div>
+			<nav class="gnb">
+				<a class="nav-item" href="../index.html">Work</a>
+				<a class="nav-item" href="../about.html">About</a>
+				<a class="nav-item" href="https://drive.google.com/file/d/1KHR262pPMhNu9TNszYU2B45msR5ULXkb/view?usp=sharing">CV</a>
+			</nav>
+		</header>
+		<section class="landing">
+			<div class="title">
+				<div class="tags">
+					<span>#Web Application Development</span> <span>#Collaboration Tool</span> <span>#Front-end</span> <span>#Back-end</span> 
+				</div>
+				<h2>SketchBoard</h2>
+				<p>Mar 2018 - May 2018    |    Programmer, School of Computer Science, Carnegie Mellon University  <br> SketchBoard is a visual workspace, which offers a real-time text editing and drawing tool for more creative and intuitive collaboration. Using this collaborative whiteboard, users can visualize and share their idea with their team by simply adding documents, images, and drawings in real time.</p>
+			</div>
+		</section>
+	</div>
+	<section class="wide-img">
+		<h2 class="readable-hidden">SketchBoard</h2>
+	</section>
+	<div class="container">
+		<section class="detail">
+			<div class="detail-item">
+				<h4 class="detail-title">Skills.</h4>
+				<p>Django, HTML/CSS, JavaScript, jQuery, WebSockets, MySQL, Sketch, InVision</p>
+			</div>
+			<div class="detail-item">
+				<h4 class="detail-title">Technologies.</h4>
+					<div class="detail-sm-item">
+						<h5>#01. WebSocket</h5> <br>
+						<p>+ Full-duplex communication channels over a single TCP connection, which enables users to collaborate on the same canvas in real time. <br>
+						+ Channel: handles connections and sockets asynchronously and allows WebSockets in Django framework.
+						</p>
+					</div>
+					<div class="detail-sm-item">
+						<h5>#02. WYSIWYG Editor</h5> <br>
+						<p>
+							+ WYSIWYG Editor helps the user to view documents very similar to the end result while the document is being created. <br>
++ We will use WYSIWYG editor to build a web-based word processor, which allows users to
+work on the documentation including text, images, and links. <br>
++ Summernote (summernote.org) <br>
++ a JavaScript library that helps users create WYSIWYG editors online. <br>
++ We are planning to use a summernote for the text editor.
+
+						</p>
+					</div>
+					<div class="detail-sm-item">
+						<h5>#03. P5.js Library</h5> <br>
+						<p>+ P5.js is a JS client-side library for creating graphic and interactive experiences that provides us with a solution for the real-time drawing along with websocket.
+
+						</p>
+					</div>
+					<div class="detail-sm-item">
+						<h5>#04. Cloud</h5> <br>
+						<p>+ We will deploy the final application on AWS EC2 to store and manage data.
+						</p>
+					</div>
+					<div class="detail-sm-item">
+						<h5>#05. Bootstrap</h5> <br>
+						<p>+ For the front-end part, we will use bootstrap to create a responsive web application.
+						</p>
+					</div>
+			</div>
+			<div class="detail-item">
+				<h4 class="detail-title">Product Backlog.</h4>
+					<div class="detail-sm-item">
+						<h5>#01. Select</h5> <br>
+						<p>This is the default tool for selecting and moving any object on the board. By hovering not clicking objects, users can check the creator and created time of the object.
+						</p>
+					</div>
+					<div class="detail-sm-item">
+						<h5>#02. Free-Transform</h5> <br>
+						<p>
+							By selecting objects and dragging the mouse, users can resize any object created on the board.
+
+						</p>
+					</div>
+					<div class="detail-sm-item">
+						<h5>#03. Scribble</h5> <br>
+						<p>By scribbling lines using a pencil, users can collaborate together on the textboxes or sticky notes in real-time. We will use p5.js library for the drawing and WebSockets for the collaboration. <br>
+						+ draw : Scribble lines using the mouse control. <br>
+						+ setting 
+						<ul style="margin-left: 30px">
+							<li>color : Change the pencil color. </li>
+							<li>size : Change the size of pencil. </li>
+							<li>eraser : Remove the object.</li>
+						</ul>
+						</p>
+					</div>
+					<div class="detail-sm-item">
+						<h5>#04. TextBox</h5> <br>
+						<p>We will use WYSIWYG editor to build a textbox with the styling options for the typography. Currently, we are trying to manipulate the Summernote (https://summernote.org/) API for this.<br>
+						+ draw : Create the textbox by dragging mouse, which will define the textbox size. <br>
+						+ setting : font, font size, font color, font style(bold, italic, underline, strikethrough), alignment <br>
+						+ type : Type texts in the textbox with selected settings.
+						</p>
+					</div>
+					<div class="detail-sm-item">
+						<h5>#05. Sticky note</h5> <br>
+						<p>Users can create the sticky notes to enhance the communication experience. It is similar to the textbox other than having more options to change the background colors and the shape of sticky notes. <br>
+						+ draw : Create the sticky note by dragging mouse, which will define the textbox size. <br>
+						+ setting <br>
+						&nbsp;&nbsp; - font, font size, font color, font style(bold, italic, underline, strikethrough), alignment, list, background color <br>
+						+ type : Type texts in the sticky note with selected settings.
+						</p>
+					</div>
+					<div class="detail-sm-item">
+						<h5>#06. Comment</h5> <br>
+						<p>By selecting an object, users can add comments on any object. Also, they can view the comments by other collaborators by clicking the number badges on the objects.
+						</p>
+					</div>
+					<div class="detail-sm-item">
+						<h5>#07. Real-time Chatting</h5> <br>
+						<p>Users can chat in real time, which will be implemented using websocket.
+						</p>
+					</div>
+			</div>
+			<div class="detail-item">
+				<h4 class="detail-title">Wireframes.</h4>
+					<div class="detail-sm-item">
+						<h5>Paper Mock-up</h5>
+						<img src="../asset/sketchboard/sketchboard-1.png" alt="" style="max-width: 70%; height: auto;">
+						<h5>Digital Mock-up</h5>
+						<p>User flows : I worked on paper mockup and digital mockup  using Sketch and InVision, which demonstrate how a website or application will look.  It helped my team visualize the overall ux and make sure to bethe same page. </p>
+						<img src="../asset/sketchboard/sketchboard-2.png" alt="" style="max-width: 70%; height: auto;">
+						<iframe src="https://player.vimeo.com/video/262573277" width="640" height="408" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<p>Main views : We have 2 main views for the home with the lists of boards, and main board for collaboration.</p>
+						<img src="../asset/sketchboard/sketchboard-3.png" alt="" style="max-width: 70%; height: auto;">						
+					</div>
+			</div>
+			<div class="detail-item">
+				<h4 class="detail-title">Development Process.</h4>
+					<div class="detail-sm-item">
+						<h5>TextBox Implementation</h5>
+						<p>We tested the textbox implementation using operational transformation, real-time collaboration editing with rich text. <br>
+						*Operational transformation : a technology for supporting a range of collaboration functionalities in advanced collaborative software systems, which is devised for consistency maintenance and concurrency control in collaborative editing of plain text documents.</p>
+						<iframe src="../asset/sketchboard/sketchboard-4.mp4" width="640" height="408" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<iframe src="../asset/sketchboard/sketchboard-5.mp4" width="640" height="408" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</div>
+					<div class="detail-sm-item">
+						<h5>Scribble</h5>
+						<p>We implemented real-time collaboration on drawing using node.js. Tested p5.js library with socket.io.</p>
+						<iframe src="../asset/sketchboard/sketchboard-6.mp4" width="640" height="408" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</div>
+			</div>
+			<div class="detail-item">
+				<h4 class="detail-title">Further Challenges.</h4>
+					<div class="detail-sm-item">
+						<h5>Security model</h5>
+						<p>+ We can think about how to deal with the Access Control List. <br>
++ Users can invite other friends by link or email and control differential acess by giving 'can read’, ‘can comment’, ‘can edit’ authority to them.
+</p>
+<img src="../asset/sketchboard/sketchboard-7.png" alt="" style="max-width: 70%; height: auto;">	
+						
+					</div>
+					<div class="detail-sm-item">
+						<h5>Multimedia files and link</h5>
+						<p>
+							+ We can improve the collaboration experience by inserting files on the board. <br>
++ Especially, it would be better if users can insert youtube link and play the video directly on the board. <br>
++ For the links of articles or web pages, we can crawl the title and image information and show them in a thumbnail on the board.
+					</p>
+					</div>
+			</div>
+
+</body>
+</html>

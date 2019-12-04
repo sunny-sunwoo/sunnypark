@@ -1,0 +1,52 @@
+.pg-header
+	@extend %clearfix
+	position: relative
+	width: 100%
+	+responsive($dk)
+		height: 4.5rem
+		line-height: 4.5rem
+	+responsive($mb)
+		height: 6rem
+		padding-top: 1.5rem
+
+// Title
+.brand
+	float: left
+	font:
+		size: 18px
+		weight: $bold
+	line-height: 1.5rem
+	+responsive($dk)
+		line-height: 4.5rem
+
+
+// Navigation
+.gnb
+	position: absolute
+	+responsive($mb)
+		top: 4.5rem
+		left: 0
+	+responsive($dk)
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+
+.nav-item
+	display: inline-block
+	+hover-opacity
+	&:first-child
+		margin-right: 0.8rem
+
+// Links
+.link
+	float: right
+
+
+.link-item
+	display: inline-block
+	width: 20px
+	+responsive($dk)
+		height: 4.5rem
+		line-height: 4.5rem
+		text-align: center
+

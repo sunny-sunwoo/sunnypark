@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Sunwoo Park's Porfolio">
+	<meta name="keywords" content="ITP, ETC, NYU, CMU, Carnegie Mellon University, New York University, Portfolio, Interactive Media Arts, Art&amp;Technology, Sogang University">
+	<meta name="author" content="Sunwoo Park">
+	<title>Idea Generation | Sunwoo Park</title>
+	<link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body class="idea work">
+	<div class="container no-padding">
+		<header class="pg-header">
+			<h1 class="brand"><a href="../index.html">Sunny Park</a></h1>
+			<div class="link">
+				<a class="link-item" target="_blank" href="https://www.linkedin.com/in/sunny-sunwoo-park/" aria-label="Go to LinkedIn Page">
+					<i class="fa fa-linkedin"></i>
+				</a>
+				<a class="link-item" target="_blank" href="https://github.com/sunny-sunwoo" aria-label="Go to Github Page">
+					<i class="fa fa-github"></i>
+				</a>
+				<a class="link-item" target="_blank" href="mailto:seonwoo1@andrew.cmu.edu" aria-label="Send an Email">
+					<i class="fa fa-envelope"></i>
+				</a>
+			</div>
+			<nav class="gnb">
+				<a class="nav-item" href="../index.html">Work</a>
+				<a class="nav-item" href="../about.html">About</a>
+				<a class="nav-item" href="https://drive.google.com/file/d/1KHR262pPMhNu9TNszYU2B45msR5ULXkb/view?usp=sharing">CV</a>
+			</nav>
+		</header>
+		<section class="landing">
+			<div class="title">
+				<div class="tags">
+					<span>#ProjectManagement</span> <span>#ServiceDevelopment</span>
+				</div>
+				<h2>Idea Generation</h2>
+				<p>Jun 2014 - Jun 2015    |    Dept. of Art&amp;Technology, Sogang Univ.  <br>Experienced various projects as a project manager of several teams covering the whole area of art and technology including Songspot(2015.06), GotCha(2015.09), BAEBAE(2015.10), etc.</p>
+			</div>
+		</section>
+	</div>
+	<section class="wide-img">
+		<h2 class="readable-hidden">Idea Generation</h2>
+	</section>
+	<div class="container">
+		<section class="detail">
+			<div class="detail-item">
+				<h4 class="detail-title">Songspot.</h4>
+				<div class="detail-sm-item">
+					<p>Jun 2015</p>
+					<p>Developed a location-based music curation service as a project manager and UI designer.</p>
+				</div>
+			</div>
+			<div class="detail-item">
+					<div class="slide">
+						<div class="slide-box slide-2 ig-1">
+							<p class="image" aria-label="Idea Generation: Sonspot"></p>
+							<p class="image" aria-label="Idea Generation: Sonspot"></p>
+						</div>
+					</div>
+					<button class="btn-1">Next</button>
+				</div>
+			<div class="detail-item">
+				<h4 class="detail-title">Gotcha.</h4>
+				<div class="detail-sm-item">
+					<p>Sep 2015</p>
+					<p>Developed a smart compass, parking assistant service based on beacon technology. </p>
+				</div>
+			</div>
+			<div class="detail-item">
+				<div class="slide">
+					<div class="slide-box slide-4 ig-2">
+						<p class="image" aria-label="Idea Generation: Gotcha"></p>
+						<p class="image" aria-label="Idea Generation: Gotcha"></p>
+						<p class="image" aria-label="Idea Generation: Gotcha"></p>
+						<p class="image" aria-label="Idea Generation: Gotcha"></p>
+					</div>
+				</div>
+				<button class="btn-2">Next</button>
+			</div>
+			<div class="detail-item">
+				<h4 class="detail-title">BAEBAE.</h4>
+				<div class="detail-sm-item">
+					<p>Oct 2015</p>
+					<p>Created an idea for smart watch application which helps the pregnant women share their fetal movement utilizing 3D touch technology.</p>
+				</div>
+			</div>
+			<div class="detail-item">
+				<div class="slide">
+					<div class="slide-box slide-3 ig-3">
+						<p class="image" aria-label="Idea Generation: BAEBAE"></p>
+						<p class="image" aria-label="Idea Generation: BAEBAE"></p>
+						<p class="image" aria-label="Idea Generation: BAEBAE"></p>
+						
+					</div>
+				</div>
+				<button class="btn-3">Next</button>
+			</div>
+		</section>
+	</div>
+	<script type="text/javascript">
+		var slide1 = document.querySelector('.ig-1');
+		var slide2 = document.querySelector('.ig-2');
+		var slide3 = document.querySelector('.ig-3');
+		var button1 = document.querySelector('.btn-1');
+		var button2 = document.querySelector('.btn-2');
+		var button3 = document.querySelector('.btn-3');
+		var moveSlide = function(elem, num) {
+			var slide_obj = elem;
+			return function(){
+				var img_list = slide_obj.querySelectorAll('.image');
+				var img_width = parseInt(window.getComputedStyle(img_list.item(0)).getPropertyValue('width'), 10);
+				var cur_pos = parseInt(window.getComputedStyle(slide_obj).getPropertyValue("left"), 10);
+				console.log(img_width);
+				console.log(cur_pos);
+				var move = cur_pos - img_width;
+				if ( move < img_width*(-num+1) ) {
+					slide_obj.style.left =  '0px'
+				} else {
+					slide_obj.style.left = move + 'px';
+				}
+			};
+		};
+		button1.onclick = moveSlide(slide1, 2);
+		button2.onclick = moveSlide(slide2, 4);
+		button3.onclick = moveSlide(slide3, 3);
+	</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+.detail
+	width: 100%
+	padding-top: 4.5rem
+	+responsive($dk)
+		+fluid-col(9, 12)
+		margin: 0 auto
+	.detail-title
+		@extend .list-title
+	.detail-sm-item
+		margin-bottom: 1.5rem
+		h5
+			font:
+				size: 1rem
+				weight: $regular
+			line-height: 1.5rem
+			color: $mint
+
+.detail-item
+	width: 100%
+	margin-bottom: 4.5rem
+	.other &
+		margin:
+			top: 6rem
+			bottom: 6rem
+		&:first-child
+			margin-top: 0
+	img
+		display: block
+		width: 100%
+		height: auto
+		margin: 0 auto
+		+responsive($dk)
+			&.col-8
+				width: 80%
+			&.col-6
+				width: 50%
+			&.col-5
+				width: 50%
+	.img-box
+		@extend %clearfix
+		width: 100%
+		img
+			+responsive($mb)
+				margin-bottom: 1.5rem
+			+responsive($dk)
+				width: 49%
+				height: auto
+				margin-top: 1.5rem
+				&:first-child
+					float: left
+				&:last-child
+					float: right
+
+

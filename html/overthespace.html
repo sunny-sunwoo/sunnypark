@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Sunwoo Park's Porfolio">
+	<meta name="keywords" content="ITP, ETC, NYU, CMU, Carnegie Mellon University, New York University, Portfolio, Interactive Media Arts, Art&amp;Technology, Sogang University">
+	<meta name="author" content="Sunwoo Park">
+	<title>Over the Space | Sunwoo Park</title>
+	<link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body class="overthespace work">
+	<div class="container no-padding">
+		<header class="pg-header">
+			<h1 class="brand"><a href="../index.html">Sunwoo Park</a></h1>
+			<div class="link">
+				<a class="link-item" target="_blank" href="https://linkedin.com/in/sunwoo-park-289a01b0" aria-label="Go to LinkedIn Page">
+					<i class="fa fa-linkedin"></i>
+				</a>
+				<a class="link-item" target="_blank" href="https://www.facebook.com/sunwoo.park.71" aria-label="Go to Facebook Page">
+					<i class="fa fa-facebook"></i>
+				</a>
+				<a class="link-item" target="_blank" href="mailto:sssw0117@gmail.com" aria-label="Send an Email">
+					<i class="fa fa-envelope"></i>
+				</a>
+			</div>
+			<nav class="gnb">
+				<a class="nav-item" href="../index.html">Work</a>
+				<a class="nav-item" href="../about.html">About</a>
+			</nav>
+		</header>
+		<section class="landing">
+			<div class="title">
+				<div class="tags">
+					<span>#GameProgramming</span> <span>#SoundDesign</span> <span>#Unity3D</span> <span>#ProjectManagement</span>
+				</div>
+				<h2>Over The Space</h2>
+				<p>Apr 2014 - Jun 2014    |    Project Manager, Programmer  <br>Developed 2 versions of game using the Unity engine. Achieved the whole process of game production including C#, sound design, game design, etc.</p>
+			</div>
+		</section>
+	</div>
+	<section class="wide-img">
+		<h2 class="readable-hidden">Over The Space</h2>
+	</section>
+	<div class="container">
+		<section class="detail">
+			<div class="detail-item">
+				<div class="slide">
+					<div class="slide-box slide-6 otsslide-1">
+						<p class="image" aria-label="Over the Sky"></p>
+						<p class="image" aria-label="Over the Sky"></p>
+						<p class="image" aria-label="Over the Sky"></p>
+						<p class="image" aria-label="Over the Sky"></p>
+						<p class="image" aria-label="Over the Sky"></p>
+						<p class="image" aria-label="Over the Sky"></p>
+					</div>
+				</div>
+				<button class="btn-1">Next</button>
+			</div>
+			<div class="detail-item">
+					<div class="slide">
+						<div class="slide-box slide-4 otsslide-2">
+							<p class="image" aria-label="Over the Space"></p>
+							<p class="image" aria-label="Over the Space"></p>
+							<p class="image" aria-label="Over the Space"></p>
+							<p class="image" aria-label="Over the Space"></p>
+						</div>
+					</div>
+					<button class="btn-2">Next</button>
+			</div>
+			<div class="detail-item media-container md-16-9">
+					<iframe width="1280" height="720" src="https://www.youtube.com/embed/DuG8zEjIsyY" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</section>
+	</div>
+	<script type="text/javascript">
+		var slide1 = document.querySelector('.otsslide-1');
+		var slide2 = document.querySelector('.otsslide-2');
+		var button1 = document.querySelector('.btn-1');
+		var button2 = document.querySelector('.btn-2');
+		var moveSlide = function(elem, num) {
+			var slide_obj = elem;
+			return function(){
+				var img_list = slide_obj.querySelectorAll('.image');
+				var img_width = parseInt(window.getComputedStyle(img_list.item(0)).getPropertyValue('width'), 10);
+				var cur_pos = parseInt(window.getComputedStyle(slide_obj).getPropertyValue("left"), 10);
+				console.log(img_width);
+				console.log(cur_pos);
+				var move = cur_pos - img_width;
+				if ( move < img_width*(-num+1) ) {
+					slide_obj.style.left =  '0px'
+				} else {
+					slide_obj.style.left = move + 'px';
+				}
+			};
+		};
+		button1.onclick = moveSlide(slide1, 6);
+		button2.onclick = moveSlide(slide2, 4);
+	</script>
+</body>
+</html>
