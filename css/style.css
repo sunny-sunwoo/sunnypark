@@ -124,7 +124,7 @@
 
 @media screen and (min-width: 651px) {
   .landing {
-    width: 75%;
+    width: 80%;
     overflow: hidden;
     margin: 0 auto;
     height: calc(100vh - 4.5rem);
@@ -132,11 +132,7 @@
 }
 
 .landing .title {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding-top: 20%;
   transition: all 0.2s ease-in;
 }
 
