@@ -484,6 +484,10 @@ html {
 
 }
 
+.intuit .wide-img {
+  background-image: url(../asset/intuit.png);
+  background-position: top center;
+}
 
 .sketchboard .wide-img {
   background-image: url(../asset/sketchboard/sketchboard-wide.png);
