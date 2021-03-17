@@ -149,6 +149,10 @@ html {
   transition: all 0.4s;
 }
 
+.landing .title:hover {
+  color:#5f5131;
+}
+
 @media screen and (min-width: 651px) {
   .landing .title {
     /*top: 45%;*/
@@ -215,17 +219,22 @@ html {
 }
 
 
+
 .workitem:nth-child(1) {
-  background-image: url(../asset/neuroact/wide.png);
-}
-.workitem:nth-child(2) {
   background-image: url(../asset/sketchboard/home.png);
 }
 
-.workitem:nth-child(3) {
+.workitem:nth-child(2) {
   background-image: url(../asset/blanknote.png);
 }
 
+.workitem:nth-child(3) {
+  background-image: url(../asset/theotherday/home.png);
+}
+
+.workitem:nth-child(4) {
+  background-image: url(../asset/neuroact/wide.png);
+}
 
 
 
@@ -234,9 +243,6 @@ html {
   line-height: 1.5rem;
 }
 
-.workitem:nth-child(4) {
-  background-image: url(../asset/theotherday/home.png);
-}
 
 
 .workitem:nth-child(5) {
