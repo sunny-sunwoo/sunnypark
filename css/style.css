@@ -246,22 +246,21 @@ html {
   background-image: url(../asset/momice-web.png);
 }
 
+/*
 .workitem:nth-child(7) {
   background-image: url(../asset/hci-2.png);
 }
 
-
-
-
 .workitem:nth-child(8) {
   background-image: url(../asset/smarthome-web.png);
 }
+*/
 
-.workitem:nth-child(9) {
+.workitem:nth-child(7) {
   background-image: url(../asset/pno.png);
 }
 
-.workitem:nth-child(10) {
+.workitem:nth-child(8) {
   background-image: url(../asset/memoryhorizon.jpeg);
 }
 
@@ -269,7 +268,7 @@ html {
 
 
 
-.workitem:nth-child(11) {
+.workitem:nth-child(9) {
   background-image: url(../asset/noteon.jpeg);
 }
 /*
@@ -284,11 +283,11 @@ html {
 */
 
 
-.workitem:nth-child(12) {
+.workitem:nth-child(10) {
   background-image: url(../asset/tumblo.png);
 }
 
-
+/*
 .workitem:nth-child(13) {
   background-image: url(../asset/idea-2.png);
 }
@@ -296,6 +295,7 @@ html {
 .workitem:nth-child(14) {
   background-image: url(../asset/other-2.png);
 }
+*/
 
 .workitem a:hover .content {
   background-color: #f5cd79;
