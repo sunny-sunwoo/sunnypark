@@ -33,6 +33,15 @@ html {
   padding: 0;
 }
 
+.top {
+  background-color: #f5cd79;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 90%;
+  width: -webkit-fill-available;
+}
+
 .pg-header {
   position: relative;
   width: 100%;
@@ -93,9 +102,9 @@ html {
   transition: all 0.2s ease-in;
 }
 
-.nav-item:hover {
+/* .nav-item:hover {
   opacity: .5;
-}
+} */
 
 
 .nav-item:nth-child(2) {
@@ -123,7 +132,7 @@ html {
 .landing {
   position: relative;
   width: 100%;
-  height: calc(100vh - 6rem);
+  height: calc(100vh + 6rem);
 }
 
 @media screen and (min-width: 651px) {
@@ -136,12 +145,8 @@ html {
 }
 
 .landing .title {
-  padding-top: 20%;
-  transition: all 0.2s ease-in;
-}
-
-.landing .title.brand:hover {
-  color: #636e72;
+  padding-top: 18%;
+  transition: all 0.4s;
 }
 
 @media screen and (min-width: 651px) {
@@ -293,7 +298,8 @@ html {
 }
 
 .workitem a:hover .content {
-  background-color: rgba(26,188,156,0.9);
+  background-color: #f5cd79;
+  opacity: 0.9;
 }
 
 .workitem a:hover .text {
@@ -1139,7 +1145,7 @@ a {
 }
 
 a:hover {
-  color: #1abc9c;
+  color: #d4811b;
 }
 
 .container {
