@@ -245,12 +245,12 @@ html {
 
 
 
-.workitem:nth-child(5) {
+/* .workitem:nth-child(5) {
   background-image: url(../asset/gifto-web.png);
 }
 .workitem:nth-child(6) {
   background-image: url(../asset/momice-web.png);
-}
+} */
 
 /*
 .workitem:nth-child(7) {
@@ -262,11 +262,11 @@ html {
 }
 */
 
-.workitem:nth-child(7) {
+.workitem:nth-child(5) {
   background-image: url(../asset/pno.png);
 }
 
-.workitem:nth-child(8) {
+.workitem:nth-child(6) {
   background-image: url(../asset/memoryhorizon.jpeg);
 }
 
@@ -274,7 +274,7 @@ html {
 
 
 
-.workitem:nth-child(9) {
+.workitem:nth-child(7) {
   background-image: url(../asset/noteon.jpeg);
 }
 /*
@@ -289,7 +289,7 @@ html {
 */
 
 
-.workitem:nth-child(10) {
+.workitem:nth-child(8) {
   background-image: url(../asset/tumblo.png);
 }
 
