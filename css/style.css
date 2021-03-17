@@ -218,32 +218,33 @@ html {
   }
 }
 
-
-
 .workitem:nth-child(1) {
-  background-image: url(../asset/sketchboard/home.png);
+  background-image: url(../asset/intuit.png);
+  background-position: top left;
 }
 
 .workitem:nth-child(2) {
-  background-image: url(../asset/blanknote.png);
+  background-image: url(../asset/sketchboard/home.png);
+  background-position: top left;
 }
 
 .workitem:nth-child(3) {
-  background-image: url(../asset/theotherday/home.png);
+  background-image: url(../asset/blanknote.png);
+  background-position: top left;
 }
 
 .workitem:nth-child(4) {
-  background-image: url(../asset/neuroact/wide.png);
+  background-image: url(../asset/theotherday/home.png);
 }
 
-
+.workitem:nth-child(5) {
+  background-image: url(../asset/neuroact/wide.png);
+}
 
 .workitem:nth-child(1) .project {
   margin: 5px 0 6px;
   line-height: 1.5rem;
 }
-
-
 
 /* .workitem:nth-child(5) {
   background-image: url(../asset/gifto-web.png);
@@ -262,21 +263,17 @@ html {
 }
 */
 
-.workitem:nth-child(5) {
+.workitem:nth-child(6) {
   background-image: url(../asset/pno.png);
 }
 
-.workitem:nth-child(6) {
+.workitem:nth-child(7) {
   background-image: url(../asset/memoryhorizon.jpeg);
 }
 
-
-
-
-
-.workitem:nth-child(7) {
+/* .workitem:nth-child(7) {
   background-image: url(../asset/noteon.jpeg);
-}
+} */
 /*
 .workitem:nth-child(8) {
   background-image: url(../asset/overthespace-2.png);
